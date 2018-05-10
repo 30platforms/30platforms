@@ -1,0 +1,38 @@
+{{ $ := .root }}
+{{ $page := .page }}
+{{ $autolink := default true $page.Params.autolink }}
+
+<!-- Contact widget -->
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
+    {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+  </div>
+  <div class="col-xs-12 col-md-8">
+    {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
+
+    <ul class="fa-ul" itemscope>
+
+      <li>
+        <i class="fa-li fa fa-twitter fa-2x" style="margin-top: 7px;" aria-hidden="true"></i>
+        <span id="person-email" itemprop="email" style="padding-bottom: 5px;">
+        <a href="https://www.twitter.com/30platforms">@30Platforms</a>
+        </span>
+      </li>
+
+    </ul>
+
+    {{ if $.Site.Params.map }}
+    <div class="hidden">
+      <input id="map-provider" value="{{ $.Site.Params.map }}">
+      <input id="map-lat" value="{{ $.Site.Params.latitude }}">
+      <input id="map-lng" value="{{ $.Site.Params.longitude }}">
+      <input id="map-dir" value="{{ $.Site.Params.address }}">
+      <input id="map-zoom" value="{{ $.Site.Params.zoom | default "15" }}">
+      <input id="map-api-key" value="{{ $.Site.Params.map_api_key }}">
+    </div>
+    <div id="map"></div>
+    {{ end }}
+
+  </div>
+</div>
