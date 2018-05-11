@@ -6,7 +6,7 @@ draft = false
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
 tags = ["hugo","netlify", "wordpress"]
-summary = "It is May 2018 and I have finally decided to get serious about building a building some tutorials, sharing what I already know and learning new things. So of course one of the first things I need to do is decide on a blogging platform to use."
+summary = "Wordpress powers around 25% of the world's websites and has a rich ecosystem of themes, plugins, community support and hosting options. It is often my go-to recommendation when helping friends who want to deploy a website and I have built several Wordpress sites for clients. But, it's 2018 and I want to build my site with a static site generator."
 categories = []
 
 # Featured image
@@ -29,10 +29,23 @@ image = "Choosing-A-Blogging-Platform.png"
 #}
 #```
 +++
+Wordpress powers around 25% of the world's websites and has a rich ecosystem of themes, plugins, community support and hosting options. It is often my go-to recommendation when helping friends who want to deploy a website and I have built several Wordpress sites for clients. But, it's 2018 and I want to build my site with a static site generator.
 
-It is May 2018 and I have finally decided to get serious about building an building a blog, sharing what I already know and learning new things. So of course one of the first things I need to do is decide on a blogging platform to use.
+```golang
 
-Even though I have built several Wordpress sites for clients and I think Wordpress is a great tool for a lot of needs, I am also evaluating static site generators.
+func chooseBloggingPlatform() Platform {
+
+    wordpress := getWordpress()
+    hugo := getHugo()
+
+    if speed(hugo) > speed(wordpress) && security(hugo) > security(wordpress) {
+            return hugo
+        }
+
+    return wordpress
+}
+
+```
 
 ### Wordpress vs Static Site Generators
 
