@@ -1,26 +1,157 @@
-{{ $ := .root }}
-{{ $page := .page }}
-{{ $autolink := default true $page.Params.autolink }}
+{{ $ := .root }} {{ $page := .page }} {{ $autolink := default true $page.Params.autolink }}
 
 <!-- Contact widget -->
 <div class="row">
   <div class="col-xs-12 col-md-4 section-heading">
     <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
-    {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
-  </div>
-  <div class="col-xs-12 col-md-8">
-    {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
-
-    <ul class="fa-ul" itemscope>
-
+    <ul class="fa-ul" style="margin-bottom: 20px;" itemscope>
       <li>
         <i class="fa-li fa fa-twitter fa-2x" style="margin-top: 7px;" aria-hidden="true"></i>
         <span id="person-email" itemprop="email" style="padding-bottom: 5px;">
-        <a href="https://www.twitter.com/30platforms">@30Platforms</a>
+          <a href="https://www.twitter.com/30platforms" target="_blank">@30Platforms</a>
         </span>
       </li>
-
+      <li>
+        <i class="fa-li fa fa-github fa-2x" style="margin-top: 7px;" aria-hidden="true"></i>
+        <span id="person-email" itemprop="email" style="padding-bottom: 5px;">
+          <a href="https://www.github.com/30platforms" target="_blank">github.com/30platforms</a>
+        </span>
+      </li>
     </ul>
+    {{ with $page.Params.subtitle }}
+
+    <p>{{ . | markdownify }}</p>{{ end }}
+  </div>
+  <div class="col-xs-12 col-md-8">
+    {{ with $page.Content }}
+    <p>{{ . | markdownify }}</p>{{ end }}
+    <p>Hi Folks, I'm currently writing under the pseudonym
+      <strong>Blair Freeman</strong>. I've been a full stack web developer for about 15 years. I like building things on the internet
+      and sharpening my skills. I'm inspired by Paul Graham, Jez Humble, Matt Mullenweg and many, many others. Someday soon
+      I hope to be fully independent dev.
+    </p>
+
+    <div style="">
+      <style type="text/css">
+        #mc_embed_signup {
+          background-color: rgb(247, 247, 247) !important;
+          clear: left;
+          font: 14px Helvetica, Arial, sans-serif !important;
+          width: 100%;
+          text-align: left !important;
+        }
+
+        #mc_embed_signup form {
+          padding: 10px 0 10px 0;
+        }
+
+        .mc-field-group {
+          display: inline-block;
+        }
+
+        /* positions input field horizontally */
+
+        #mc_embed_signup input.email {
+          font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+          font-size: 15px;
+          border: 1px solid #ABB0B2;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          color: #343434;
+          background-color: #fff;
+          box-sizing: border-box;
+          height: 34px;
+          padding: 0px 0.4em;
+          display: inline-block;
+          margin: 0;
+          width: 350px;
+          vertical-align: top;
+        }
+
+        #mc_embed_signup label {
+          display: block;
+          font-size: 17px;
+          padding-bottom: 10px;
+          font-weight: bold;
+        }
+
+        #mc_embed_signup .clear {
+          display: inline-block;
+        }
+
+        /* positions button horizontally in line with input */
+
+        #mc_embed_signup div#mce-responses {
+          float: left;
+          top: -1.4em;
+          padding: 0em .5em 0em .5em;
+          overflow: hidden;
+          width: 90%;
+          margin: 0 5%;
+          clear: both;
+        }
+
+        #mc_embed_signup div.response {
+          margin: 1em 0;
+          padding: 1em .5em .5em 0;
+          font-weight: bold;
+          float: left;
+          top: -1.5em;
+          z-index: 1;
+          width: 80%;
+        }
+
+        #mc_embed_signup #mce-error-response {
+          display: none;
+        }
+
+        #mc_embed_signup #mce-success-response {
+          color: #529214;
+          display: none;
+        }
+
+        #mc_embed_signup label.error {
+          display: block;
+          float: none;
+          width: auto;
+          margin-left: 1.05em;
+          text-align: left;
+          padding: .5em 0;
+        }
+
+        @media (max-width: 768px) {
+          #mc_embed_signup input.email {
+            width: 100%;
+            margin-bottom: 5px;
+          }
+          #mc_embed_signup .clear {
+            display: block;
+            width: 100%
+          }
+          #mc_embed_signup .button {
+            width: 100%;
+            margin: 0;
+          }
+        }
+      </style>
+      <div id="mc_embed_signup">
+        <form action="https://30platforms.us18.list-manage.com/subscribe/post?u=89cf2be42c1eaa900e93bab63&amp;id=8110df77d4" method="post"
+          id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL">Reach out, I'd love to hear from you</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_89cf2be42c1eaa900e93bab63_8110df77d4" tabindex="-1" value="">
+            </div>
+            <div class="clear">
+              <input type="submit" value="Go" name="go" id="mc-embedded-subscribe" class="btn btn-primary btn-outline">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
     {{ if $.Site.Params.map }}
     <div class="hidden">
@@ -28,7 +159,7 @@
       <input id="map-lat" value="{{ $.Site.Params.latitude }}">
       <input id="map-lng" value="{{ $.Site.Params.longitude }}">
       <input id="map-dir" value="{{ $.Site.Params.address }}">
-      <input id="map-zoom" value="{{ $.Site.Params.zoom | default "15" }}">
+      <input id="map-zoom" value="{{ $.Site.Params.zoom | default " 15 " }}">
       <input id="map-api-key" value="{{ $.Site.Params.map_api_key }}">
     </div>
     <div id="map"></div>

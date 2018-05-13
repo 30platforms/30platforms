@@ -1,5 +1,6 @@
 <footer class="site-footer">
   <div class="container">
+    {{ if .IsHome }} {{ else }}
     <div style="margin-top: -50px; margin-bottom: 30px;">
       <!-- Begin MailChimp Signup Form -->
       <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
@@ -10,9 +11,6 @@
           font: 14px Helvetica, Arial, sans-serif;
           width: 100%;
         }
-
-        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
       </style>
       <div id="mc_embed_signup">
         <form action="https://30platforms.us18.list-manage.com/subscribe/post?u=89cf2be42c1eaa900e93bab63&amp;id=8110df77d4" method="post"
@@ -32,9 +30,7 @@
       </div>
     </div>
 
-    <!--End mc_embed_signup-->
-
-    <!--End mc_embed_signup-->
+    {{ end }}
     <p class="powered-by">
 
       {{ with .Site.Copyright }}{{ . | markdownify}} &middot; {{ end }} Powered by
