@@ -1,10 +1,14 @@
 {{ if .Params.header.image }}
 <div class="article-header">
   {{ $img_src := urls.Parse .Params.header.image }}
-  {{ if $img_src.Scheme }}
+  {{ if and $img_src.Scheme .Params.header.preview }}
+    {{ if .Params.header.showImageOnPage | default true }}
     <img src="{{ .Params.header.image }}" class="article-banner" itemprop="image">
+    {{ end }}
   {{ else }}
+    {{ if .Params.header.showImageOnPage | default true }}
     <img src="{{ (printf "/img/%s" .Params.header.image) | relURL }}" class="article-banner" itemprop="image">
+    {{ end }}
   {{ end }}
 
   {{ with .Params.header.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
