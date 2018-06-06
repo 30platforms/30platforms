@@ -1,6 +1,6 @@
 +++
 title = "Deploying a Static Site to Netlify"
-date = 2018-05-09T22:25:13-04:00
+date = 2018-05-15T22:25:13-04:00
 draft = false
 
 # Tags and categories
