@@ -29,7 +29,6 @@ showImageOnPage = false
 <link as="script" href="/hangman/app.hangman.js" rel="preload">
 <link as="script" href="/hangman/vendors.hangman.js" rel="preload">
 <link href="/hangman/app.hangman.css" rel="stylesheet">
-<noscript><strong>We're sorry but hangman-game doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
 <div style="text-align: center; margin-bottom: 40px;">
     <div id="app"></div>
 </div>
