@@ -52,7 +52,9 @@ To build the Hangman game, we will explore a few of Vue's core features:
 
 You can find the source code for building the Hangman game at [github.com/30platforms/vue-hangman-game](https://github.com/30platforms/vue-hangman-game) and at [codepen/30platforms](https://codepen.io/30platforms/pen/MGNaOm).
 
-The following sections look at these core Vue concepts in a little more detail and explain how they are used in the Hangman game.
+Also, here's a [full video walkthrough](https://www.youtube.com/watch?v=y4yf5DRJI6k) of building this app.
+
+The following sections look at the above core Vue concepts in a little more detail and explain how they are used in the Hangman game.
 
 ### Declarative Rendering with Lists
 
