@@ -19,17 +19,25 @@ caption = ""
 preview = true
 
 +++
-Here's the cool thing about static sites - they are static! This means that they are easy to deploy and low cost to host. You can host a static site on any web server that  serves static assets, but I have decided to host this site on Netlify because Netlify is free and awesome for static sites. In this article I'll break down a few different hosting options for static sites.
+Here's the cool thing about static sites - they are static! This means that they are easy to deploy and inexpensive to host. You can host a static site on any web server that serves static files, In this article I'll break down a few different hosting options for static sites. 
+
+TL;DR
+
+Netlify is free and especially awesome for static sites.
 
 ### What is a Static Site Exactly?
 
-A static site is web site that serves static HTML pages, usually with some CSS files and maybe a little bit of Javascript. For a site to be considered static, Javascript should be kept to a minimum. I consider 30platforms.com to be a static site, but it does use a little bit of Javascript to enable code highlighting (highlight.js) and a few Bootstrap interactive features (jQuery) and Google Analytics.
+Web sites and web applications tend to fall into one of 3 categories: Server Side Rendered sites, Single Page Applications and Static Sites. 
 
-When you navigate around a static site, different HTML pages are served from the backend web server for each page in the site. This is the opposite of a Single Page Application (SPA) where the pages are rendered by client side Javascript and navigation is handled by a client side Javascript SPA framework.
+**Server Side Rendered** sites work by dynamically rendering individual HTML pages for each page in the site _in real time_ when requested from a backend application server. Content is often fetched from a database and then processed in memory into a HTML page which is returned back to the client. This is how Wordpress works and many other web application frameworks such as Express, Laravel and Spring support Server Side Rendering.
 
-Static sites are search engine friendly because for each URL crawled by a search engine, the server speedily returns static HTML and no client side Javascript rendering is needed. 
+In a **Single Page Application** (SPA), there is a main HTML file with minimal mark up that acts like a shell. Then there is a main JavaScript file, which controls everything on the page. The JavaScript handles navigation and dynamic rendering of different pages _on the client side_. In an SPA, all pages are based on the same main HTML file.
 
-Static site generators modernize the process of building a static site by allowing you to use use HTML templates and author pages in simple Markdown files. Then the generator framework provides build tools to pre-render the source files into static HTML files, which can then be deployed a web server.
+A **Static Site** is web site that directly serves _already existing_ static HTML pages, usually with some CSS files and maybe a little bit of JavaScript. For a site to be considered static, JavaScript is usually minimal. For example, 30platforms.com is a static site, but it does use some JavaScript to enable code highlighting (highlight.js) and a few Bootstrap interactive features (jQuery).
+
+When you navigate around a static site, a simple backend web server returns the already existing static HTML file for each page in the site. This is basically the opposite of an SPA where the pages are rendered by client side JavaScript.
+
+Static site generators modernize the process of building a static site by allowing you to use use HTML templates and author pages in simple Markdown files. Then the generator framework provides build tools to pre-render the source files into static HTML files ahead of time. Then those files are deployed to a Static Site Host.
 
 ![static site generator](/img/static-site-generator.png)
 
