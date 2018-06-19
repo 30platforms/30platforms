@@ -7,6 +7,7 @@ draft = false
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
 tags = ["hugo", "netlify", "aws", "digital ocean", "github"]
 categories = []
+summary = "Here's the cool thing about static sites - they are static! This means that they are easy to deploy and inexpensive to host. You can host a static site on any web server that serves static files, In this article I'll break down a few different hosting options for static sites. TL;DR Netlify is free and especially awesome for static sites."
 
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
@@ -16,7 +17,6 @@ categories = []
 [header]
 image = "headers/bubbles-wide.jpg"
 caption = ""
-preview = true
 
 +++
 Here's the cool thing about static sites - they are static! This means that they are easy to deploy and inexpensive to host. You can host a static site on any web server that serves static files, In this article I'll break down a few different hosting options for static sites. 
@@ -52,9 +52,9 @@ Here are 4 good options for static site hosting that I considered for 30 Platfor
 
 **Github Pages** is a popular option for documentation and showcase sites where the project source code is stored in a Github repository. Github Pages sites are deployed by committing your static HTML to the repository, which means that if you use a Static Site Generator, you need to run your build step locally and commit the resulting HTML. This feels slightly awkward to me as I'm used to running builds on a Continuous Integration server and only committing source code.
 
-Of course you can host a static site on **Amazon Web Services**, but getting it setup is more complicated than Github Pages or Netlify. Due to the sheer volume of offerings, the AWS console itself is overwhelming. Hosting a static site on AWS involves setting up S3 buckets, configuring permissions to files (your HTML) and setting up a redirect to your www domain name. Then there are more steps to setup Cloudfront and HTTPS. On top of that, while hosting a static site with AWS should not be overly expensive, it is not free. It's hard to beat free.
+Of course you can host a static site on **Amazon Web Services**, but getting it setup is more complicated than Github Pages or Netlify. Due to the sheer volume of offerings, the AWS console itself is overwhelming. Hosting a static site on AWS involves setting up S3 buckets, configuring permissions to files (your HTML) and setting up a redirect to your www domain name. Then there are more steps to setup Cloudfront and HTTPS. On top of that, while hosting a static site with AWS should not be overly expensive, it is not free.
 
-With **Digital Ocean**, you can quickly provision cloud based Linux servers called Droplets. When you create a droplet, you will get root access to the server so that you can configure and install software on it. If you wanted to host a static site on a Droplet, you would most likely use the highly regarded Nginx web server. If you are looking for a "close to the metal" experience and you like operating Linux servers, then Digital Ocean can be fun, but it's probably even more steps and setup than AWS would be. Also, the smallest Droplet starts at $5 per month.
+With **Digital Ocean**, you can quickly provision cloud based Linux servers called Droplets. When you create a Droplet, you will get root access to the server so that you can configure and install software on it. If you wanted to host a static site on a Droplet, you would most likely install Nginx to serve your static files. If you are looking for a "close to the metal" experience and you like operating Linux servers, then Digital Ocean can be fun, but it's probably even more steps and setup than AWS would be. Also, the smallest Droplet starts at $5 per month.
 
 Since I have chosen to go with **Netlify**, I'll discuss it in further detail below, but here is a small matrix comparing these options.
 
@@ -84,11 +84,9 @@ Since I have chosen to go with **Netlify**, I'll discuss it in further detail be
 
 ### Netlify
 
-Netlify is billed as an *All-in-one platform for automating modern web projects* and everything about Netlify does feel modern and frictionless, but their pricing at $0 plus key features are unbeatable.
+Netlify is billed as an *All-in-one platform for automating modern web projects*. Everything about Netlify does feel modern and frictionless, but their $0 pricing plus key features are unbeatable. With Netlify you can automate deployment of a static site, on a custom domain, with HTTPS **for free**. That's hard to beat.
 
 ![netlify pricing](/img/netlify-pricing.png)
-
-With Netlify you can automate deployment of a static site, on a custom domain, with HTTPS **for free**. That's hard to beat.
 
 ### Deploying a Hugo Site to Netlify
 
