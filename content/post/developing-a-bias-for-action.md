@@ -1,7 +1,7 @@
 +++
 title = "Developing a Bias for Action"
 date = 2018-06-18T16:50:51-04:00
-draft = true
+draft = false
 
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
@@ -19,25 +19,31 @@ caption = "Photo by Joshua Sortino on Unsplash"
 preview = true
 
 +++
-If you would rather do things than simply stargazing and avoiding actual work, then you probably have an intrinsic _bias for action_. You should count yourself lucky. You like to create things rather than just dream about them. You like to get things done. You are successfully overcoming resistance.
+If you would rather do things than simply talking about them, then you probably have an intrinsic _bias for action_. You should count yourself lucky. You like to create things rather than just dream about them. You like to get things done. You are successfully overcoming resistance.
 
-Having a bias for action means that given two alternatives, an action vs a non-action, we tend to choose the action. We are not overly concerned about the risks or the wasted effort because we know that an action will result in new knowledge at a minimum. We would rather act upon an idea and learn from a failure, than never acting in the first place.
+Having a bias for action means that given two alternatives, an action vs a non-action, we tend to choose the action. We are not overly concerned about the risks or the potential for wasted effort because we know that an action will result in new knowledge at a minimum. We would rather act upon an idea and learn from a failure, than never acting in the first place.
+
+You probably have a bias for action if:
+
+- You would rather produce things than sit in planning meetings.
+- You get excited about an idea and immediately start building something.
+- You believe that getting feedback on actual working things leads to a virtuous cycle of building better things.
+- You follow a [makers schedule](http://www.paulgraham.com/makersschedule.html) or wish you did.
+- You like to test hypotheses and make decisions based on data instead of assumption.
 
 If you already have a bias for action, then you can start working on harnessing your bias for action. You can shift gears from _building something_ to _building the right things_. You can start to think about opportunity cost.
 
 On the other hand, if have trouble even starting things, then you can focus on beating resistance and developing your bias for action.
 
-<blockquote><p>Most of us have two lives. The life we live and the unlived life within in us. Between the two stands Resistance.</p><footer>Steven Pressfield <cite title="Source Title">The War of Art</cite></footer></blockquote>
+<blockquote><p>Most of us have two lives. The life we live and the unlived life within us. Between the two stands Resistance.</p><footer>Steven Pressfield <cite title="Source Title">The War of Art</cite></footer></blockquote>
 
-### Using Your Existing Skills
+### Leveling Up
 
-It may be hard to believe, but you have unique combination of skills and perspective that no one else has. There's a good chance that you already have knowledge that could be leveraged. There's a good chance that you already have the skills to create something useful. By actively solving a problem, you will always learn something new.
-
-### Learning New Skills
-
-We often feel that our skills are lacking. We could achieve more if only we had more skills. It is up to you to take action to gain new skills. The online world is chalk full of free learning resources. Bookstores and libraries are full of amazing, life changing books.
+We often feel that our skills are lacking. We could achieve more if only we had more skills. It is up to you to take action to gain new skills. Your journey of learning is only beginning when you get out of school. Fortunately the world today is chalk full of learning resources. The web abounds with them. Bookstores and libraries are full of amazing, life changing books.
 
 But the key to learning skills is doing something with those skills. A person with a bias for action doesn't just read a book, she creates something with the skills acquired. She solves a problem with those skills, creating experience which eventually turns into wisdom. She takes action.
+
+It may be hard to believe, but you have unique combination of skills and perspective that no one else has. There's a good chance that you already have knowledge that could be leveraged. There's a good chance that you already have the skills to create something useful. You probably have a list of things you want to work on. Pick something small and just start.
 
 ### Buying Tools
 
@@ -51,7 +57,7 @@ If you are just learning how to beat resistance, then start small. Change your m
 
 Here are five things you can do today:
 
-1. You can de-clutter around your house.
+1. You can de-clutter a room in your house and donate things you are not using.
 2. You can take an online course.
 3. You can send someone a thank you note or a gift.
 4. You can increase your 401k contribution by 1%. Because your 401k is pre-tax, it won't hurt as bad as you think.
@@ -59,20 +65,20 @@ Here are five things you can do today:
 
 ### Creating Value for Others
 
-At this point, things become scarier. When creating in public, resistance can be like pushing a boulder up a hill. What if my idea flops?
+If you've ever shared a creative work with others, then you know the feeling. Putting a piece of yourself out there is uncomfortable until you get used to it. When creating in public, resistance can be like pushing a boulder up a hill. What if my idea flops? What will people think about me?
 
-Now you have to make something _and_ share it with the public. Or better yet, share your idea with people first and then make something. This way you can get earlier feedback.
+To create value for others, you must overcome the fear of failure. You must talk to your target audience. If you are not talking to you target audience then you are running a great risk of creating something that no one wants.
+
+It is possible to take too much action when you have not validated your idea. Sunk cost is a powerful psychological force and it can trick you into continuing to work when the best course of action may be to abandon a failing project. Build something minimal and share it before you sink too much effort or money into it. Share early and share often to make sure you don't fall into a sunk cost trap.
+
+Unfortunately, squashing resistance just to start something is hard enough, but you have to do it over and over again at each phase of your project, especially when validating and marketing your creation.
 
 ### The Failed Project
 
-If you have built something that no one uses or likes, don't be discouraged. You learned valuable lessons along the way. Assuming you showed your creation to people, you discovered what people don't need. You solved technical problems and acquired more technical skills.
+If you have built something that no one uses or likes, don't be discouraged. You learned valuable lessons along the way. Assuming you showed your creation to people, you discovered what people don't need. You improved your creators mental model. You solved technical problems and acquired more technical skills. You learned about platforms and techniques.
 
-Or you never showed your output to anyone, but either way it felt good to make something.
+The creators that we most admire seldom hit home runs on their first at bat, it's just rare to hear about the failures. Don't let a failure beat you down. Persevere and start something new.
 
-    Rather produce things than sit in planning meetings
-    Belives that building things and getting feedback leads to a virtuous cycle of building better things
-    Typically follow a makers schedule
-    Likes to make decisions based on data instead of gut feeling
-    Believes that by building a demo-able prototype, that other stakeholders can understand the vision better and provide better feedback
+### Start Now
 
-
+Every success story has one thing in common. At some point, _someone started something_. It doesn't have to be big, in fact it usually shouldn't be something big, but it must be something. You will never have perfect information. There will never be the perfect time to do what you are dreaming about. Embrace your bias for action and ask yourself, what can I start today?
