@@ -43,7 +43,7 @@ We often feel that our skills are lacking. We could achieve more if only we had 
 
 But the key to learning skills is doing something with those skills. A person with a bias for action doesn't just read a book, she creates something with the skills acquired. She solves a problem with those skills, creating experience which eventually turns into wisdom. She takes action.
 
-It may be hard to believe, but you have unique combination of skills and perspective that no one else has. There's a good chance that you already have knowledge that could be leveraged. There's a good chance that you already have the skills to create something useful. You probably have a list of things you want to work on. Pick something small and just start.
+It may be hard to believe, but you have a unique combination of skills and perspective that no one else has. There's a good chance that you already have knowledge that could be leveraged. There's a good chance that you already have the skills to create something useful. You probably have a list of things you want to work on. Pick something small and just start.
 
 ### Buying Tools
 
@@ -67,7 +67,7 @@ Here are five things you can do today:
 
 If you've ever shared a creative work with others, then you know the feeling. Putting a piece of yourself out there is uncomfortable until you get used to it. When creating in public, resistance can be like pushing a boulder up a hill. What if my idea flops? What will people think about me?
 
-To create value for others, you must overcome the fear of failure. You must talk to your target audience. If you are not talking to you target audience then you are running a great risk of creating something that no one wants.
+To create value for others, you must overcome the fear of failure. You must talk to your target audience. If you are not talking to your target audience then you are running a great risk of creating something that no one wants.
 
 It is possible to take too much action when you have not validated your idea. Sunk cost is a powerful psychological force and it can trick you into continuing to work when the best course of action may be to abandon a failing project. Build something minimal and share it before you sink too much effort or money into it. Share early and share often to make sure you don't fall into a sunk cost trap.
 
